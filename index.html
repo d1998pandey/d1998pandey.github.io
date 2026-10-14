@@ -94,13 +94,115 @@
       </a>
 
       <!-- Project 2: Aap yahan aage aur bhi projects jod sakte hain -->
-      <a href="#" class="card">
+     <!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepak Pandey | Physics Simulations & Projects</title>
+  <style>
+    :root {
+      --bg: #0f0f12;
+      --card: #18181d;
+      --border: #2a2a35;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --accent: #3186ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    .container {
+      width: 100%;
+      max-width: 900px;
+    }
+    header {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; color: #fff; }
+    header p { color: var(--muted); font-size: 0.95rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      transition: transform 0.2s, border-color 0.2s;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+    }
+    .card h3 { font-size: 1.15rem; color: #fff; }
+    .card p { font-size: 0.88rem; color: var(--muted); line-height: 1.4; }
+    .card-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-align: center;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Deepak Pandey</h1>
+      <p>Interactive Physics Simulations & Educational Tools Portfolio</p>
+    </header>
+
+    <div class="grid">
+      <!-- Project 1: Electric Dipole -->
+      <a href="https://d1998pandey.github.io/dipole-field-simulation/" class="card" target="_blank">
         <div>
-          <h3>Coming Soon: 3D Magnetic field Generator</h3>
-          <p>Parametric 3D printable STL generator built with Three.js for custom home decor and rapid prototyping.</p>
+          <h3>Electric Dipole Field Resolution</h3>
+          <p>An interactive canvas simulation resolving dipole moment vectors, radial/transverse components, and field angles in real time.</p>
         </div>
-        <span class="card-btn" style="background: #334155;">In Development</span>
+        <span class="card-btn">Launch Simulation &rarr;</span>
       </a>
+
+      <!-- Project 2: Convex Lens Optics -->
+      <a href="https://d1998pandey.github.io/convex-lens-simulation/" class="card" target="_blank">
+        <div>
+          <h3>Convex Lens Ray Optics (NCERT Class 10)</h3>
+          <p>Interactive simulation demonstrating all 6 standard ray optics cases, real-time thin lens calculations, and slow-motion ray animation.</p>
+        </div>
+        <span class="card-btn">Launch Simulation &rarr;</span>
+      </a>
+    </div>
+
+    <footer>Interactive Physics Lab &bull; Powered by GitHub Pages</footer>
+  </div>
+</body>
+</html>
     </div>
 
     <footer>Interactive Physics Lab &bull; Powered by GitHub Pages</footer>
